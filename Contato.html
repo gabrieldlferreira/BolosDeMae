@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bolos de Mãe</title>
+        <link href="reset.css" rel="stylesheet"> 
+        <link href="style.css" rel="stylesheet">  
+        <link rel="shortcut icon" href="logo.png">
+
+    </head>
+    <body>
+        <header> 
+
+            <div class="bloco"> 
+                <h1><img class="img-logo" src="logo.png"></h1>
+                <nav>
+                    <ul>
+                        <li><a class="link" href="Home.html">HOME</a></li>
+                        <li><a class="link" href="Bolos.html">BOLOS</a></li>
+                        <li><a class="link" href="sobre_Nos.html">SOBRE NÓS</a></li>
+                        <li><a class="link" href="Contato.html">CONTATO</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="bloco">
+            <h2 class="fale_Conosco">ENTRE EM CONTATO CONOSCO</h2>
+                <form class="formulario">
+                    <label for="nome-completo">Nome completo</label>
+                    <input type="text" id="nome-completo" required placeholder="digite seu nome aqui"/>    
+                    
+                    <label for="email">E-mail</label>
+                    <input type="email" id="e-mail" required placeholder="digite seu nome aqui"/>    
+
+                    <label for="telefone">Telefone</label>
+                    <input type="number" id="telefone" required placeholder="(xx) xxxxx-xxxx"/>    
+
+                    <fieldset>
+                        <legend>Qual a melhor forma de contato?</legend>
+        
+                        <label>
+                            <input class="radio" name="contato" type="radio" checked/>
+                            WhatsApp
+                        </label>     
+                        <label>
+                            <input class="radio" name="contato" type="radio"/>
+                            Telefone
+                        </label>            
+                        <label>
+                            <input class="radio" name="contato" type="radio"/>
+                            E-mail
+                        </label>    
+                    </fieldset>
+
+                    <label  for="mensagem">Deixe sua mensagem:</label>
+                    <textarea maxlength="512" cols="64" rows="10" required></textarea>
+
+                    <label>
+                        <input class="radio" name="contato" type="radio" checked/>
+                            Desejo receber mensagens e e-mails com informações promocionais.
+                    </label>     
+
+                    <label for="botao"></label>
+                    <input class="botao" type="submit" value="Enviar"/>
+
+                </form>
+        </main>
+        <footer>
+
+            <div>
+                <p class="texto-horario">Nosso horário de atendimento</p>
+                <table class="tabela">
+                    <thead>
+                        <tr>
+                            <th>seg</th>
+                            <th>ter</th>
+                            <th>qua</th>
+                            <th>qui</th>
+                            <th>sexta</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>8:00 ás 12:00</td>
+                            <td>8:00 ás 12:00</td>
+                            <td>8:00 ás 12:00</td>
+                            <td>10:00 ás 13:00</td>
+                            <td>10:00 ás 13:00</td>
+                        </tr>
+                        <tr>
+                            <td>13:00 ás 18:00</td>
+                            <td>13:00 ás 18:00</td>
+                            <td>13:00 ás 18:00</td>
+                            <td>14:00 ás 22:00</td>
+                            <td>14:00 ás 22:00</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="5">Agradecemos a preferência!</td>                    
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+            <div class="wpp">
+                <a href="https://api.whatsapp.com/send?phone=5519999999999&text=Texto%20aqui" 
+                target="_blank">                
+                    <img class="img-wpp" src="wpp.png" width="100px" height="100px">
+                </a>
+            </div>
+
+            <img src="logo.png" width="100px" height="100px">
+            <p class="texto-rodape">&copy; Desenvolvido por Gabriel Ferreira - Senac Araraquara 2022</p>
+        </footer>
+
+    </body>
